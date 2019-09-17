@@ -31,7 +31,7 @@
     "pretty": "node resources/pretty.js",
     "pretty-check": "node resources/pretty.js --check",
     "version:release": "lerna version",
-    "version:prerelease": "lerna versiton --conventional-prerelease",
+    "version:prerelease": "lerna version --conventional-prerelease",
     "version:graduate": "lerna version --conventional-graduate"
   },
   "devDependencies": {

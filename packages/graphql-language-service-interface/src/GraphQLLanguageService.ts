@@ -77,9 +77,9 @@ export class GraphQLLanguageService {
     // Perform syntax diagnostics first, as this doesn't require
     // schema/fragment definitions, even the project configuration.
     let queryHasExtensions = false;
-    const projectConfig = this._graphQLConfig.getConfigForFile(
+    const projectConfig: GraphQLProjectConfig = this._graphQLConfig.getConfigForFile(
       uri,
-    ) as GraphQLProjectConfig;
+    );
     const schemaPath = projectConfig.schemaPath;
     try {
       const queryAST = parse(query);
